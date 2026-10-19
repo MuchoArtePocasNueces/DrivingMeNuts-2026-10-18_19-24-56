@@ -14,6 +14,11 @@ public class NPCOferta : MonoBehaviour
     private bool dialogoActivo = false;
     private ControladorPersonaje jugador;
 
+    [Header("Sonido")]
+    public AudioSource audioSource;
+    public AudioClip sonidoDar;   // El MP3 que suena al dar el objeto
+
+
     void Update()
     {
         if (!dialogoActivo) return;
@@ -57,12 +62,17 @@ public class NPCOferta : MonoBehaviour
             jugador.Guardar(objetoQueOfrece, pesoDelObjeto);
             Debug.Log("Objeto aceptado y guardado.");
 
-            // Animación del NPC al dar el objeto
+            // Sonido al dar el objeto
+            if (audioSource != null && sonidoDar != null)
+                audioSource.PlayOneShot(sonidoDar);
+
+            // Animación del NPC al dar (si la tienes)
             if (animatorNPC != null)
                 animatorNPC.SetTrigger("dando");
         }
         dialogoActivo = false;
     }
+
 
     void Rechazar()
     {

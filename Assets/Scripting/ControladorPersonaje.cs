@@ -20,7 +20,7 @@ public class ControladorPersonaje : MonoBehaviour
 
     [Header("Límite de cámara")]
     public bool usarLimiteIzquierdo = true;
-    public float margenIzquierdo = 0.5f;   // Qué tan adentro del borde se detiene
+    public float margenIzquierdo = 0.5f;
 
     [Header("Detección de piso")]
     public Transform chequeoPiso;
@@ -37,6 +37,16 @@ public class ControladorPersonaje : MonoBehaviour
 
     [Header("Animación")]
     public Animator animator;
+
+    [Header("Sonidos - Efectos (una vez)")]
+    public AudioSource audioEfectos;
+    public AudioClip sonidoSaltar;
+    public AudioClip sonidoRecoger;
+    public AudioClip sonidoEscupir;
+
+    [Header("Sonidos - Caminar (loop)")]
+    public AudioSource audioContinuo;
+    public AudioClip sonidoCaminar;
 
     public List<ObjetoGuardado> objetosGuardados = new List<ObjetoGuardado>();
 
@@ -62,24 +72,25 @@ public class ControladorPersonaje : MonoBehaviour
         LeerMovimiento(teclado);
         RevisarPiso();
 
-        // Saltar: Barra Espaciadora
-        if (teclado.spaceKey.wasPressedThisFrame && enPiso)
-            quiereSaltar = true;
-
-        // Lanzar / Escupir: Shift
-        if (teclado.leftShiftKey.wasPressedThisFrame || teclado.rightShiftKey.wasPressedThisFrame)
-            Escupir();
-
-        // Recoger: E
-        if (teclado.eKey.wasPressedThisFrame)
-            Recoger();
-
-        // Animaciones
         if (animator != null)
         {
             animator.SetFloat("velocidad", Mathf.Abs(entradaHorizontal));
             animator.SetBool("enElAire", !enPiso);
         }
+
+        ActualizarSonidoCaminar();
+
+        if (teclado.spaceKey.wasPressedThisFrame && enPiso)
+        {
+            quiereSaltar = true;
+            ReproducirEfecto(sonidoSaltar);
+        }
+
+        if (teclado.leftShiftKey.wasPressedThisFrame || teclado.rightShiftKey.wasPressedThisFrame)
+            Escupir();
+
+        if (teclado.eKey.wasPressedThisFrame)
+            Recoger();
     }
 
     void FixedUpdate()
@@ -95,7 +106,6 @@ public class ControladorPersonaje : MonoBehaviour
 
         rb.linearVelocity = v;
 
-        // Límite izquierdo: no dejar que el personaje salga por el borde izquierdo de la cámara
         if (usarLimiteIzquierdo && Camera.main != null)
         {
             Camera cam = Camera.main;
@@ -137,7 +147,6 @@ public class ControladorPersonaje : MonoBehaviour
 
         if (entradaHorizontal > 0 && !mirandoDerecha) Voltear();
         else if (entradaHorizontal < 0 && mirandoDerecha) Voltear();
-
     }
 
     void RevisarPiso()
@@ -149,15 +158,38 @@ public class ControladorPersonaje : MonoBehaviour
     void Voltear()
     {
         mirandoDerecha = !mirandoDerecha;
-
-        // Gira el personaje completo 180° en Y (sin usar flipX)
-        if (mirandoDerecha)
-            transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
-        else
-            transform.localRotation = Quaternion.Euler(0f, 180f, 0f);
+        SpriteRenderer sr = GetComponentInChildren<SpriteRenderer>();
+        if (sr != null)
+            sr.flipX = !mirandoDerecha;
     }
 
+    // Suena al caminar, silencio al estar quieto (idle sin sonido)
+    void ActualizarSonidoCaminar()
+    {
+        if (audioContinuo == null) return;
 
+        bool caminando = Mathf.Abs(entradaHorizontal) > 0.1f && enPiso;
+
+        if (caminando)
+        {
+            if (!audioContinuo.isPlaying && sonidoCaminar != null)
+            {
+                audioContinuo.clip = sonidoCaminar;
+                audioContinuo.loop = true;
+                audioContinuo.Play();
+            }
+        }
+        else
+        {
+            audioContinuo.Stop();
+        }
+    }
+
+    void ReproducirEfecto(AudioClip clip)
+    {
+        if (audioEfectos != null && clip != null)
+            audioEfectos.PlayOneShot(clip);
+    }
 
     void RecalcularVelocidad()
     {
@@ -172,8 +204,6 @@ public class ControladorPersonaje : MonoBehaviour
         fuerzaSaltoActual = fuerzaSaltoBase - (pesoCargado * factorSaltoPorPeso);
         if (fuerzaSaltoActual < fuerzaSaltoMinima)
             fuerzaSaltoActual = fuerzaSaltoMinima;
-
-        Debug.Log("Peso cargado: " + pesoCargado + " | Velocidad: " + velocidadActual + " | Salto: " + fuerzaSaltoActual);
     }
 
     public float PesoTotal()
@@ -194,6 +224,8 @@ public class ControladorPersonaje : MonoBehaviour
             Debug.Log("Nada que escupir (vacío)");
             return;
         }
+
+        ReproducirEfecto(sonidoEscupir);
 
         int ultimo = objetosGuardados.Count - 1;
         ObjetoGuardado datos = objetosGuardados[ultimo];
@@ -225,8 +257,6 @@ public class ControladorPersonaje : MonoBehaviour
             Vector3 impulso = new Vector3(direccion * fuerzaEscupir, fuerzaEscupirArriba, 0f);
             rbEscupido.AddForce(impulso, ForceMode.Impulse);
         }
-
-        Debug.Log("¡Escupió! Quedan: " + objetosGuardados.Count);
     }
 
     void Recoger()
@@ -261,16 +291,15 @@ public class ControladorPersonaje : MonoBehaviour
             : masCercano.gameObject;
 
         Guardar(paraGuardar, masCercano.peso);
+        ReproducirEfecto(sonidoRecoger);
 
         Destroy(masCercano.gameObject);
-        Debug.Log("Recogido: " + masCercano.name + " (peso " + masCercano.peso + ")");
     }
 
     public void Guardar(GameObject prefab, float peso)
     {
         objetosGuardados.Add(new ObjetoGuardado(prefab, peso));
         RecalcularVelocidad();
-        Debug.Log("Guardado. Total objetos: " + objetosGuardados.Count);
     }
 
     void OnDrawGizmosSelected()
@@ -280,9 +309,7 @@ public class ControladorPersonaje : MonoBehaviour
             Gizmos.color = enPiso ? Color.green : Color.red;
             Gizmos.DrawWireSphere(chequeoPiso.position, radioChequeoPiso);
         }
-
         Gizmos.color = Color.cyan;
         Gizmos.DrawWireSphere(transform.position, radioRecoger);
     }
 }
-
