@@ -4,8 +4,12 @@ using UnityEngine.InputSystem;
 public class NPCOferta : MonoBehaviour
 {
     [Header("Oferta")]
-    public GameObject objetoQueOfrece;   // El prefab que regala (ej: ObjetoEscupible)
+    public GameObject objetoQueOfrece;
+    public float pesoDelObjeto = 1f;
     public string textoDialogo = "¿Quieres este objeto? (Z: aceptar / X: rechazar)";
+
+    [Header("Animación")]
+    public Animator animatorNPC;   // Arrastra aquí el Animator del NPC (su Sprite)
 
     private bool dialogoActivo = false;
     private ControladorPersonaje jugador;
@@ -19,21 +23,14 @@ public class NPCOferta : MonoBehaviour
 
         // Aceptar con Z
         if (teclado.zKey.wasPressedThisFrame)
-        {
             Aceptar();
-        }
         // Rechazar con X
         else if (teclado.xKey.wasPressedThisFrame)
-        {
             Rechazar();
-        }
     }
 
-    // Cuando algo entra en la zona del NPC
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Algo entró al trigger del NPC: " + other.name);
-
         ControladorPersonaje cp = other.GetComponentInParent<ControladorPersonaje>();
         if (cp != null)
         {
@@ -41,13 +38,8 @@ public class NPCOferta : MonoBehaviour
             dialogoActivo = true;
             Debug.Log(textoDialogo);
         }
-        else
-        {
-            Debug.Log("Pero no era el personaje (no tiene ControladorPersonaje)");
-        }
     }
 
-    // Cuando se aleja
     void OnTriggerExit(Collider other)
     {
         ControladorPersonaje cp = other.GetComponentInParent<ControladorPersonaje>();
@@ -58,18 +50,19 @@ public class NPCOferta : MonoBehaviour
         }
     }
 
-public float pesoDelObjeto = 1f; // Peso del objeto que ofrece el NPC
-
-void Aceptar()
-{
-    if (jugador != null && objetoQueOfrece != null)
+    void Aceptar()
     {
-        jugador.Guardar(objetoQueOfrece, pesoDelObjeto);
-        Debug.Log("Objeto aceptado y guardado.");
-    }
-    dialogoActivo = false;
-}
+        if (jugador != null && objetoQueOfrece != null)
+        {
+            jugador.Guardar(objetoQueOfrece, pesoDelObjeto);
+            Debug.Log("Objeto aceptado y guardado.");
 
+            // Animación del NPC al dar el objeto
+            if (animatorNPC != null)
+                animatorNPC.SetTrigger("dando");
+        }
+        dialogoActivo = false;
+    }
 
     void Rechazar()
     {

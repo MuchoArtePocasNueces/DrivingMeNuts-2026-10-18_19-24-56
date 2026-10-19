@@ -230,7 +230,7 @@ TextureImporter:
       sprite_ardilla-corre_2: 1311483596044627232
       sprite_ardilla-corre_3: -166082228754650242
   mipmapLimitGroupName: 
-  pSDRemoveMatte: 0
+  pSDRemoveMatte: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 

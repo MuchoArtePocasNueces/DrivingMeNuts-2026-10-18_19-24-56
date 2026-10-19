@@ -3,16 +3,22 @@ using UnityEngine;
 public class CamaraSeguidora : MonoBehaviour
 {
     public Transform objetivo;          // El personaje a seguir
-    public float desfaseX = 2f;         // Qué tan adelante del personaje mira la cámara
+    public float desfaseX = 2f;         // Qué tan adelante mira la cámara
     public float suavizado = 5f;        // Qué tan suave sigue
-    public float alturaFija = 1f;       // Altura constante de la cámara (eje Y)
-    public float profundidad = -10f;    // Distancia en Z (para 3D)
+    public float profundidad = -10f;    // Distancia en Z
 
-    private float xMaxima;              // La X más a la derecha alcanzada (no retrocede)
+    [Header("Seguir horizontal (X)")]
+    public bool soloAvanzaDerecha = true;  // Si true, la cámara no retrocede
+
+    [Header("Seguir vertical (Y)")]
+    public bool seguirY = true;
+    public float desfaseY = 1f;         // Altura extra sobre el personaje
+    public float alturaMinima = 1f;     // La cámara no baja de aquí (suelo base)
+
+    private float xMaxima;
 
     void Start()
     {
-        // Empieza en la posición actual de la cámara
         xMaxima = transform.position.x;
     }
 
@@ -20,17 +26,29 @@ public class CamaraSeguidora : MonoBehaviour
     {
         if (objetivo == null) return;
 
-        // Hacia dónde debería ir en X (el personaje + un poco adelante)
+        // --- Horizontal (X) ---
         float xDeseada = objetivo.position.x + desfaseX;
 
-        // Solo avanza a la derecha: nunca baja de la X máxima alcanzada
-        if (xDeseada > xMaxima)
-            xMaxima = xDeseada;
+        if (soloAvanzaDerecha)
+        {
+            if (xDeseada > xMaxima)
+                xMaxima = xDeseada;
+            xDeseada = xMaxima;  // No retrocede
+        }
 
-        // Posición final: X que solo avanza, Y fija, Z fija
-        Vector3 posicionDeseada = new Vector3(xMaxima, alturaFija, profundidad);
+        // --- Vertical (Y) ---
+        float yDeseada = transform.position.y; // Por defecto, se queda igual
+        if (seguirY)
+        {
+            yDeseada = objetivo.position.y + desfaseY;
+            if (yDeseada < alturaMinima)
+                yDeseada = alturaMinima;  // No baja del suelo base
+        }
 
-        // Movimiento suave solo en X
+        // Posición final
+        Vector3 posicionDeseada = new Vector3(xDeseada, yDeseada, profundidad);
+
+        // Movimiento suave
         transform.position = Vector3.Lerp(transform.position, posicionDeseada, suavizado * Time.deltaTime);
     }
 }
