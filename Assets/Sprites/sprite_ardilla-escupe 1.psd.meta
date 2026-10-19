@@ -1,10 +1,31 @@
 fileFormatVersion: 2
-guid: 8621cf83465ac834794cb15a93fea677
+guid: b6d7adcfe74f31249915a45eb202cd15
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3736543844214753316
-    second: sprite_ardilla-escupe_0
+      213: -5255609718749864748
+    second: sprite_ardilla-escupe 1_0
+  - first:
+      213: -4257560031063102878
+    second: sprite_ardilla-escupe 1_1
+  - first:
+      213: -8681824192688855036
+    second: sprite_ardilla-escupe 1_2
+  - first:
+      213: -7079827110082721327
+    second: sprite_ardilla-escupe 1_3
+  - first:
+      213: -547996218024201086
+    second: sprite_ardilla-escupe 1_4
+  - first:
+      213: -2447444950884896835
+    second: sprite_ardilla-escupe 1_5
+  - first:
+      213: -6242047623177396922
+    second: sprite_ardilla-escupe 1_6
+  - first:
+      213: -4253014153485857424
+    second: sprite_ardilla-escupe 1_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,177 +136,177 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sprite_ardilla-escupe_0
+      name: sprite_ardilla-escupe 1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 622
-        width: 890
-        height: 622
+        x: 24
+        y: 630
+        width: 851
+        height: 602
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 428c71a44dedad330800000000000000
-      internalID: 3736543844214753316
+      spriteID: 4dcd2d36ec25017b0800000000000000
+      internalID: -5255609718749864748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_ardilla-escupe_1
+      name: sprite_ardilla-escupe 1_1
       rect:
         serializedVersion: 2
-        x: 890
-        y: 622
-        width: 890
-        height: 622
+        x: 905
+        y: 633
+        width: 860
+        height: 594
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f0b4ec0608641eb43837dc16a87be2b9
-      internalID: -445854434
+      spriteID: 26a259295bb1ae4c0800000000000000
+      internalID: -4257560031063102878
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_ardilla-escupe_2
+      name: sprite_ardilla-escupe 1_2
       rect:
         serializedVersion: 2
-        x: 1780
-        y: 622
-        width: 890
-        height: 622
+        x: 1846
+        y: 632
+        width: 809
+        height: 595
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 715490513c87cc1488aa517e235fad38
-      internalID: 1391956466
+      spriteID: 408636025e6f38780800000000000000
+      internalID: -8681824192688855036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_ardilla-escupe_3
+      name: sprite_ardilla-escupe 1_3
       rect:
         serializedVersion: 2
-        x: 2670
-        y: 622
-        width: 890
-        height: 622
+        x: 2777
+        y: 631
+        width: 768
+        height: 608
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d6c9796540936e543b8ff71e7e35635e
-      internalID: 1607116085
+      spriteID: 1d9c65001c66fbd90800000000000000
+      internalID: -7079827110082721327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_ardilla-escupe_4
+      name: sprite_ardilla-escupe 1_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 890
-        height: 622
+        x: 107
+        y: 9
+        width: 768
+        height: 608
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9f02f6361e6883d4a968aaad4f991b96
-      internalID: 1493889634
+      spriteID: 284f866d7502568f0800000000000000
+      internalID: -547996218024201086
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_ardilla-escupe_5
+      name: sprite_ardilla-escupe 1_5
       rect:
         serializedVersion: 2
-        x: 890
-        y: 0
-        width: 890
-        height: 622
+        x: 997
+        y: 9
+        width: 768
+        height: 608
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b844bd17b25c94c4489e947ebc605331
-      internalID: 649002331
+      spriteID: dbfae27c8cde80ed0800000000000000
+      internalID: -2447444950884896835
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_ardilla-escupe_6
+      name: sprite_ardilla-escupe 1_6
       rect:
         serializedVersion: 2
-        x: 1780
-        y: 0
-        width: 890
-        height: 622
+        x: 1846
+        y: 10
+        width: 809
+        height: 595
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 3301e2ce4b85bfd439f459365ff90b2c
-      internalID: -200907343
+      spriteID: 64d907d22cacf59a0800000000000000
+      internalID: -6242047623177396922
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_ardilla-escupe_7
+      name: sprite_ardilla-escupe 1_7
       rect:
         serializedVersion: 2
-        x: 2670
-        y: 0
-        width: 890
-        height: 622
+        x: 2685
+        y: 11
+        width: 860
+        height: 594
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b27e3e516c096d74fb7b38e671a59c28
-      internalID: 1646774901
+      spriteID: 07d44cc29224af4c0800000000000000
+      internalID: -4253014153485857424
       vertices: []
       indices: 
       edges: []
@@ -294,7 +315,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 09c9d933031b14246b3fd440d7c1eb4d
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -302,20 +323,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":2.0},"gridSpriteSize":{"x":890.0,"y":622.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      sprite_ardilla-escupe_0: 3736543844214753316
-      sprite_ardilla-escupe_1: -445854434
-      sprite_ardilla-escupe_2: 1391956466
-      sprite_ardilla-escupe_3: 1607116085
-      sprite_ardilla-escupe_4: 1493889634
-      sprite_ardilla-escupe_5: 649002331
-      sprite_ardilla-escupe_6: -200907343
-      sprite_ardilla-escupe_7: 1646774901
+      sprite_ardilla-escupe 1_0: -5255609718749864748
+      sprite_ardilla-escupe 1_1: -4257560031063102878
+      sprite_ardilla-escupe 1_2: -8681824192688855036
+      sprite_ardilla-escupe 1_3: -7079827110082721327
+      sprite_ardilla-escupe 1_4: -547996218024201086
+      sprite_ardilla-escupe 1_5: -2447444950884896835
+      sprite_ardilla-escupe 1_6: -6242047623177396922
+      sprite_ardilla-escupe 1_7: -4253014153485857424
   mipmapLimitGroupName: 
-  pSDRemoveMatte: 0
+  pSDRemoveMatte: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 

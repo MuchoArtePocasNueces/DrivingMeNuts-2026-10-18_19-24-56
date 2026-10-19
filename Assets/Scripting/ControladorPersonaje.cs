@@ -20,7 +20,7 @@ public class ControladorPersonaje : MonoBehaviour
 
     [Header("Límite de cámara")]
     public bool usarLimiteIzquierdo = true;
-    public float margenIzquierdo = 9f;
+    public float margenIzquierdo = 0.5f;   // Qué tan adentro del borde se detiene
 
     [Header("Detección de piso")]
     public Transform chequeoPiso;
@@ -36,9 +36,8 @@ public class ControladorPersonaje : MonoBehaviour
     public float radioRecoger = 1.5f;
 
     [Header("Animación")]
-    public Animator animator;   // Arrastra aquí el objeto Sprite (que tiene el Animator)
+    public Animator animator;
 
-    // Lista de lo que lleva adentro (cada uno con su prefab y peso)
     public List<ObjetoGuardado> objetosGuardados = new List<ObjetoGuardado>();
 
     private Rigidbody rb;
@@ -63,23 +62,24 @@ public class ControladorPersonaje : MonoBehaviour
         LeerMovimiento(teclado);
         RevisarPiso();
 
-        // Avisa al Animator la velocidad para caminar/idle
-        if (animator != null)
-            animator.SetFloat("velocidad", Mathf.Abs(entradaHorizontal));
-
         // Saltar: Barra Espaciadora
         if (teclado.spaceKey.wasPressedThisFrame && enPiso)
             quiereSaltar = true;
 
-        // Lanzar / Escupir: Shift (izquierdo o derecho)
+        // Lanzar / Escupir: Shift
         if (teclado.leftShiftKey.wasPressedThisFrame || teclado.rightShiftKey.wasPressedThisFrame)
             Escupir();
 
-        // Recoger objeto del suelo: E
+        // Recoger: E
         if (teclado.eKey.wasPressedThisFrame)
             Recoger();
 
-        // Nota: Z (aceptar) y X (rechazar) las maneja el script NPCOferta.
+        // Animaciones
+        if (animator != null)
+        {
+            animator.SetFloat("velocidad", Mathf.Abs(entradaHorizontal));
+            animator.SetBool("enElAire", !enPiso);
+        }
     }
 
     void FixedUpdate()
@@ -95,10 +95,24 @@ public class ControladorPersonaje : MonoBehaviour
 
         rb.linearVelocity = v;
 
-        // Límite izquierdo: no dejar que el personaje salga por la izquierda de la cámara
+        // Límite izquierdo: no dejar que el personaje salga por el borde izquierdo de la cámara
         if (usarLimiteIzquierdo && Camera.main != null)
         {
-            float bordeIzquierdo = Camera.main.transform.position.x - margenIzquierdo;
+            Camera cam = Camera.main;
+            float bordeIzquierdo;
+
+            if (cam.orthographic)
+            {
+                float mitadAncho = cam.orthographicSize * cam.aspect;
+                bordeIzquierdo = cam.transform.position.x - mitadAncho + margenIzquierdo;
+            }
+            else
+            {
+                float distancia = Mathf.Abs(cam.transform.position.z - transform.position.z);
+                Vector3 bordeMundo = cam.ViewportToWorldPoint(new Vector3(0f, 0.5f, distancia));
+                bordeIzquierdo = bordeMundo.x + margenIzquierdo;
+            }
+
             if (transform.position.x < bordeIzquierdo)
             {
                 Vector3 pos = transform.position;
@@ -123,6 +137,7 @@ public class ControladorPersonaje : MonoBehaviour
 
         if (entradaHorizontal > 0 && !mirandoDerecha) Voltear();
         else if (entradaHorizontal < 0 && mirandoDerecha) Voltear();
+
     }
 
     void RevisarPiso()
@@ -131,18 +146,19 @@ public class ControladorPersonaje : MonoBehaviour
         enPiso = Physics.CheckSphere(chequeoPiso.position, radioChequeoPiso, capaPiso);
     }
 
-void Voltear()
-{
-    mirandoDerecha = !mirandoDerecha;
+    void Voltear()
+    {
+        mirandoDerecha = !mirandoDerecha;
 
-    // Voltea solo el dibujo con Flip X del Sprite Renderer
-    SpriteRenderer sr = GetComponentInChildren<SpriteRenderer>();
-    if (sr != null)
-        sr.flipX = !mirandoDerecha;
-}
+        // Gira el personaje completo 180° en Y (sin usar flipX)
+        if (mirandoDerecha)
+            transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
+        else
+            transform.localRotation = Quaternion.Euler(0f, 180f, 0f);
+    }
 
 
-    // Calcula el peso total y ajusta velocidad y salto
+
     void RecalcularVelocidad()
     {
         float pesoCargado = 0f;
@@ -160,7 +176,6 @@ void Voltear()
         Debug.Log("Peso cargado: " + pesoCargado + " | Velocidad: " + velocidadActual + " | Salto: " + fuerzaSaltoActual);
     }
 
-    // Devuelve el peso total: la ardilla + todo lo que lleva cargando
     public float PesoTotal()
     {
         float total = pesoBaseArdilla;
@@ -171,7 +186,6 @@ void Voltear()
 
     void Escupir()
     {
-        // Animación de escupir
         if (animator != null)
             animator.SetTrigger("escupiendo");
 
@@ -185,7 +199,7 @@ void Voltear()
         ObjetoGuardado datos = objetosGuardados[ultimo];
         objetosGuardados.RemoveAt(ultimo);
 
-        RecalcularVelocidad(); // Al soltar peso, recupera velocidad y salto
+        RecalcularVelocidad();
 
         if (datos.prefab == null)
         {
@@ -252,7 +266,6 @@ void Voltear()
         Debug.Log("Recogido: " + masCercano.name + " (peso " + masCercano.peso + ")");
     }
 
-    // Guarda un objeto con su peso y recalcula velocidad/salto
     public void Guardar(GameObject prefab, float peso)
     {
         objetosGuardados.Add(new ObjetoGuardado(prefab, peso));
@@ -272,3 +285,4 @@ void Voltear()
         Gizmos.DrawWireSphere(transform.position, radioRecoger);
     }
 }
+
