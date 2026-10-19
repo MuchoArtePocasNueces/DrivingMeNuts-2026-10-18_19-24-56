@@ -1,0 +1,2 @@
+# WOMEN IN GAMEX JAM 2026
+Team: Dinamita
