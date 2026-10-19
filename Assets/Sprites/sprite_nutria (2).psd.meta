@@ -1,0 +1,1120 @@
+fileFormatVersion: 2
+guid: 4ca3ae896ad50664f88015b08ce95a1a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8266027368161036000
+    second: sprite_nutria (2)_0
+  - first:
+      213: 253274159693055372
+    second: sprite_nutria (2)_1
+  - first:
+      213: -8803680430904413683
+    second: sprite_nutria (2)_2
+  - first:
+      213: -1738418869929467898
+    second: sprite_nutria (2)_3
+  - first:
+      213: 9085850947057034433
+    second: sprite_nutria (2)_4
+  - first:
+      213: 1689809853604060046
+    second: sprite_nutria (2)_5
+  - first:
+      213: -8824874314351080735
+    second: sprite_nutria (2)_6
+  - first:
+      213: 3761108987560023300
+    second: sprite_nutria (2)_7
+  - first:
+      213: 6943496663686599832
+    second: sprite_nutria (2)_8
+  - first:
+      213: 4705026033519232787
+    second: sprite_nutria (2)_9
+  - first:
+      213: 4035195606637481024
+    second: sprite_nutria (2)_10
+  - first:
+      213: -2758676765678719019
+    second: sprite_nutria (2)_11
+  - first:
+      213: -7932641425080765165
+    second: sprite_nutria (2)_12
+  - first:
+      213: -8257625903504306011
+    second: sprite_nutria (2)_13
+  - first:
+      213: -131479896073540244
+    second: sprite_nutria (2)_14
+  - first:
+      213: -8328680773590410541
+    second: sprite_nutria (2)_15
+  - first:
+      213: -351535352112054673
+    second: sprite_nutria (2)_16
+  - first:
+      213: 8746678555484069400
+    second: sprite_nutria (2)_17
+  - first:
+      213: -3743883632376197218
+    second: sprite_nutria (2)_18
+  - first:
+      213: 1928721044850051321
+    second: sprite_nutria (2)_19
+  - first:
+      213: 6453697883865675805
+    second: sprite_nutria (2)_20
+  - first:
+      213: -4554687097185474797
+    second: sprite_nutria (2)_21
+  - first:
+      213: 127659612506516159
+    second: sprite_nutria (2)_22
+  - first:
+      213: -4571524365803412614
+    second: sprite_nutria (2)_23
+  - first:
+      213: 5975055965759012521
+    second: sprite_nutria (2)_24
+  - first:
+      213: 6521715185611350634
+    second: sprite_nutria (2)_25
+  - first:
+      213: 4919670695824891128
+    second: sprite_nutria (2)_26
+  - first:
+      213: 2564200736065515041
+    second: sprite_nutria (2)_27
+  - first:
+      213: 2196432549598696337
+    second: sprite_nutria (2)_28
+  - first:
+      213: 7488970493478520611
+    second: sprite_nutria (2)_29
+  - first:
+      213: -1633749933043180671
+    second: sprite_nutria (2)_30
+  - first:
+      213: 4319405512871413405
+    second: sprite_nutria (2)_31
+  - first:
+      213: 1592437388461752436
+    second: sprite_nutria (2)_32
+  - first:
+      213: 89765384946527178
+    second: sprite_nutria (2)_33
+  - first:
+      213: -2788127793273057224
+    second: sprite_nutria (2)_34
+  - first:
+      213: 6963618020414716808
+    second: sprite_nutria (2)_35
+  - first:
+      213: 5016004125211488374
+    second: sprite_nutria (2)_36
+  - first:
+      213: 418820471820985095
+    second: sprite_nutria (2)_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 700
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprite_nutria (2)_0
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 36
+        width: 983
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 029ba1967eb294d80800000000000000
+      internalID: -8266027368161036000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_1
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 81
+        width: 85
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c854a4f918fc38300800000000000000
+      internalID: 253274159693055372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_2
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 187
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0272efba4b03d580800000000000000
+      internalID: -8803680430904413683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_3
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 39
+        width: 916
+        height: 454
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 600a4039f35efd7e0800000000000000
+      internalID: -1738418869929467898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_4
+      rect:
+        serializedVersion: 2
+        x: 2292
+        y: 40
+        width: 1005
+        height: 452
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c42b752c4d671e70800000000000000
+      internalID: 9085850947057034433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_5
+      rect:
+        serializedVersion: 2
+        x: 3389
+        y: 81
+        width: 85
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8b560edb19637710800000000000000
+      internalID: 1689809853604060046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_6
+      rect:
+        serializedVersion: 2
+        x: 3430
+        y: 187
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ea82a9319fb78580800000000000000
+      internalID: -8824874314351080735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_7
+      rect:
+        serializedVersion: 2
+        x: 3453
+        y: 33
+        width: 916
+        height: 454
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4055b0d62b4223430800000000000000
+      internalID: 3761108987560023300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_8
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 138
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 894562a6d614c5060800000000000000
+      internalID: 6943496663686599832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_9
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 138
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31701eacf3c9b4140800000000000000
+      internalID: 4705026033519232787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_10
+      rect:
+        serializedVersion: 2
+        x: 2110
+        y: 139
+        width: 51
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04c08dc5605eff730800000000000000
+      internalID: 4035195606637481024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_11
+      rect:
+        serializedVersion: 2
+        x: 2134
+        y: 165
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dfa893091637b9d0800000000000000
+      internalID: -2758676765678719019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_12
+      rect:
+        serializedVersion: 2
+        x: 2268
+        y: 125
+        width: 29
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 315338f17a899e190800000000000000
+      internalID: -7932641425080765165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_13
+      rect:
+        serializedVersion: 2
+        x: 4350
+        y: 139
+        width: 51
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a0df85ddf4076d80800000000000000
+      internalID: -8257625903504306011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_14
+      rect:
+        serializedVersion: 2
+        x: 4374
+        y: 165
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6d6e6b2bb3ec2ef0800000000000000
+      internalID: -131479896073540244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_15
+      rect:
+        serializedVersion: 2
+        x: 2157
+        y: 111
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3da9482b6f49a6c80800000000000000
+      internalID: -8328680773590410541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_16
+      rect:
+        serializedVersion: 2
+        x: 3302
+        y: 132
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6e7e53b5781f1bf0800000000000000
+      internalID: -351535352112054673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_17
+      rect:
+        serializedVersion: 2
+        x: 3318
+        y: 115
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81e9728edc1726970800000000000000
+      internalID: 8746678555484069400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_18
+      rect:
+        serializedVersion: 2
+        x: 4397
+        y: 111
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f41db1cad0b0cc0800000000000000
+      internalID: -3743883632376197218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_19
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 61
+        width: 39
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f88b1d429134ca10800000000000000
+      internalID: 1928721044850051321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_20
+      rect:
+        serializedVersion: 2
+        x: 2145
+        y: 87
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d18f08f3804209950800000000000000
+      internalID: 6453697883865675805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_21
+      rect:
+        serializedVersion: 2
+        x: 2171
+        y: 94
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 317643587308ac0c0800000000000000
+      internalID: -4554687097185474797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_22
+      rect:
+        serializedVersion: 2
+        x: 2291
+        y: 81
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fba6d9fbdb985c100800000000000000
+      internalID: 127659612506516159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_23
+      rect:
+        serializedVersion: 2
+        x: 3316
+        y: 91
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a73ae3e6fceae80c0800000000000000
+      internalID: -4571524365803412614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_24
+      rect:
+        serializedVersion: 2
+        x: 4385
+        y: 87
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aef4206eb9abe250800000000000000
+      internalID: 5975055965759012521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_25
+      rect:
+        serializedVersion: 2
+        x: 4411
+        y: 94
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a62a2a46869c18a50800000000000000
+      internalID: 6521715185611350634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_26
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 44
+        width: 82
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fc9a8cae6e264440800000000000000
+      internalID: 4919670695824891128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_27
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 72
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12eeaf5dbfed59320800000000000000
+      internalID: 2564200736065515041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_28
+      rect:
+        serializedVersion: 2
+        x: 2131
+        y: 77
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1939fe344cb4b7e10800000000000000
+      internalID: 2196432549598696337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_29
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 70
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3274b2d4cfa2ee760800000000000000
+      internalID: 7488970493478520611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_30
+      rect:
+        serializedVersion: 2
+        x: 3447
+        y: 72
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18b94258711c359e0800000000000000
+      internalID: -1633749933043180671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_31
+      rect:
+        serializedVersion: 2
+        x: 4371
+        y: 77
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d968093cd6c91fb30800000000000000
+      internalID: 4319405512871413405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_32
+      rect:
+        serializedVersion: 2
+        x: 4390
+        y: 70
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47040522e59791610800000000000000
+      internalID: 1592437388461752436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_33
+      rect:
+        serializedVersion: 2
+        x: 2128
+        y: 55
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acb2dda5429ee3100800000000000000
+      internalID: 89765384946527178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_34
+      rect:
+        serializedVersion: 2
+        x: 4368
+        y: 55
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 830d09d4b849e49d0800000000000000
+      internalID: -2788127793273057224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_35
+      rect:
+        serializedVersion: 2
+        x: 2471
+        y: 32
+        width: 43
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88bf35ad1bdb3a060800000000000000
+      internalID: 6963618020414716808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_36
+      rect:
+        serializedVersion: 2
+        x: 2533
+        y: 29
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 670ff1b0d2d6c9540800000000000000
+      internalID: 5016004125211488374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_nutria (2)_37
+      rect:
+        serializedVersion: 2
+        x: 2588
+        y: 28
+        width: 22
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7032d870003ffc500800000000000000
+      internalID: 418820471820985095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c044397affc90bd4ab54d1964f3913d6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sprite_nutria (2)_0: -8266027368161036000
+      sprite_nutria (2)_1: 253274159693055372
+      sprite_nutria (2)_10: 4035195606637481024
+      sprite_nutria (2)_11: -2758676765678719019
+      sprite_nutria (2)_12: -7932641425080765165
+      sprite_nutria (2)_13: -8257625903504306011
+      sprite_nutria (2)_14: -131479896073540244
+      sprite_nutria (2)_15: -8328680773590410541
+      sprite_nutria (2)_16: -351535352112054673
+      sprite_nutria (2)_17: 8746678555484069400
+      sprite_nutria (2)_18: -3743883632376197218
+      sprite_nutria (2)_19: 1928721044850051321
+      sprite_nutria (2)_2: -8803680430904413683
+      sprite_nutria (2)_20: 6453697883865675805
+      sprite_nutria (2)_21: -4554687097185474797
+      sprite_nutria (2)_22: 127659612506516159
+      sprite_nutria (2)_23: -4571524365803412614
+      sprite_nutria (2)_24: 5975055965759012521
+      sprite_nutria (2)_25: 6521715185611350634
+      sprite_nutria (2)_26: 4919670695824891128
+      sprite_nutria (2)_27: 2564200736065515041
+      sprite_nutria (2)_28: 2196432549598696337
+      sprite_nutria (2)_29: 7488970493478520611
+      sprite_nutria (2)_3: -1738418869929467898
+      sprite_nutria (2)_30: -1633749933043180671
+      sprite_nutria (2)_31: 4319405512871413405
+      sprite_nutria (2)_32: 1592437388461752436
+      sprite_nutria (2)_33: 89765384946527178
+      sprite_nutria (2)_34: -2788127793273057224
+      sprite_nutria (2)_35: 6963618020414716808
+      sprite_nutria (2)_36: 5016004125211488374
+      sprite_nutria (2)_37: 418820471820985095
+      sprite_nutria (2)_4: 9085850947057034433
+      sprite_nutria (2)_5: 1689809853604060046
+      sprite_nutria (2)_6: -8824874314351080735
+      sprite_nutria (2)_7: 3761108987560023300
+      sprite_nutria (2)_8: 6943496663686599832
+      sprite_nutria (2)_9: 4705026033519232787
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
