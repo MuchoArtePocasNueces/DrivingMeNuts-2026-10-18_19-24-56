@@ -60,9 +60,11 @@ public class ControladorPersonaje : MonoBehaviour
 
     void Start()
     {
+        Time.timeScale = 1f;  // Asegura que NO empiece pausado
         rb = GetComponent<Rigidbody>();
         RecalcularVelocidad();
     }
+
 
     void Update()
     {

@@ -13,8 +13,13 @@ public class GestorNivel : MonoBehaviour
     public TextMeshProUGUI textoResultado;   // Muestra COMPLETADO / FAIL
     public GameObject panelResultado;        // Panel que aparece al terminar
 
+[Header("Sonido")]
+public AudioSource audioSource;
+public AudioClip sonidoPerder;
+    
     private float tiempoRestante;
     private bool nivelTerminado = false;
+
 
     void Start()
     {
@@ -54,12 +59,18 @@ public class GestorNivel : MonoBehaviour
         MostrarResultado("¡COMPLETADO!", Color.green);
     }
 
-    void Fallar()
-    {
-        if (nivelTerminado) return;
-        nivelTerminado = true;
-        MostrarResultado("FAIL", Color.red);
-    }
+void Fallar()
+{
+    if (nivelTerminado) return;
+    nivelTerminado = true;
+
+    // Sonido de perder
+    if (audioSource != null && sonidoPerder != null)
+        audioSource.PlayOneShot(sonidoPerder);
+
+    MostrarResultado("FAIL", Color.red);
+}
+
 
     void MostrarResultado(string mensaje, Color color)
     {
